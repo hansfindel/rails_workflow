@@ -31,12 +31,14 @@ module RailsWorkflow
       @process_templates = ProcessTemplateDecorator
                            .decorate_collection(process_templates_collection)
 
-      respond_with(@process_templates)
+      # respond_with(@process_templates)
+      @process_templates
     end
 
     def new
       @process_template = ProcessTemplate.new(permitted_params).decorate
-      respond_with @process_template
+      # respond_with @process_template
+      @process_template
     end
 
     def create

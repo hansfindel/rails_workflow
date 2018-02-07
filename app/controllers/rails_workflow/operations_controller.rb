@@ -30,7 +30,8 @@ module RailsWorkflow
         parent.try(:operations) || Operation.waiting.order(created_at: :desc)
       )
 
-      respond_with @operations
+      # respond_with @operations
+      @operations
     end
 
     def update
