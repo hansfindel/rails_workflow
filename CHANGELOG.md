@@ -1,3 +1,5 @@
+## 0.8.0
+  * Update on ruby and RoR version - updated on lib/rails_workflow/version
 ## 0.7.1
   * STI bug in events manager fix
 ## 0.7.0
