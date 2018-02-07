@@ -6,7 +6,7 @@ module RailsWorkflow
     layout 'rails_workflow/application'
     before_action :set_operation_template, only: %i[show edit update destroy]
     before_action :set_process_template
-    respond_to :html
+    #respond_to :html
 
     before_action do
       @config_section_active = true

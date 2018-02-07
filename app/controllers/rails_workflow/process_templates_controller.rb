@@ -3,7 +3,7 @@
 module RailsWorkflow
   class ProcessTemplatesController < ApplicationController
     layout 'rails_workflow/application'
-    respond_to :html, :json
+    #respond_to :html, :json
 
     before_action :set_process_template, only: %i[show edit update destroy]
 
