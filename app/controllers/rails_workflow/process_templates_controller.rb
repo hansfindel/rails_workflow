@@ -3,7 +3,7 @@
 module RailsWorkflow
   class ProcessTemplatesController < ApplicationController
     layout 'rails_workflow/application'
-    #respond_to :html, :json
+    respond_to :html, :json
 
     before_action :set_process_template, only: %i[show edit update destroy]
 
@@ -31,14 +31,14 @@ module RailsWorkflow
       @process_templates = ProcessTemplateDecorator
                            .decorate_collection(process_templates_collection)
 
-      # respond_with(@process_templates)
-      @process_templates
+      respond_with(@process_templates)
+      # @process_templates
     end
 
     def new
       @process_template = ProcessTemplate.new(permitted_params).decorate
-      # respond_with @process_template
-      @process_template
+      respond_with @process_template
+      # @process_template
     end
 
     def create

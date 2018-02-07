@@ -29,3 +29,6 @@ end
 
 # just for dummy application
 # gem 'inherited_resources'
+
+
+gem "responders"

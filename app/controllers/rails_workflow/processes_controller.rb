@@ -3,7 +3,7 @@
 module RailsWorkflow
   class ProcessesController < ApplicationController
     layout 'rails_workflow/application'
-    #respond_to :html
+    respond_to :html
     before_action :set_process, only: %i[show edit update destroy]
 
     before_action do

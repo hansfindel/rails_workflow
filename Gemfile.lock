@@ -1,13 +1,14 @@
 PATH
   remote: .
   specs:
-    rails_workflow (0.7.1)
+    rails_workflow (0.8.0)
       active_model_serializers
       bootstrap-rails-engine
       draper
       guid
       jquery-rails
-      rails (>= 4.1.0)
+      rails (>= 5.0.0)
+      responders
       sidekiq
       slim-rails
       will_paginate
@@ -191,7 +192,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
-    sidekiq (5.0.5)
+    sidekiq (5.1.0)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
@@ -249,6 +250,7 @@ DEPENDENCIES
   pry-byebug
   rails-controller-testing
   rails_workflow!
+  responders
   rspec-rails
   sinatra
   slim-rails
